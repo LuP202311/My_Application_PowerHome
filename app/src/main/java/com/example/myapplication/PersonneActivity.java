@@ -28,12 +28,12 @@ public class PersonneActivity extends AppCompatActivity{
             textView.setText("E-mail: " + email + " et mot de passe : " + motdepasse);
         }
 
-        Button btn = new Button(this);
-        btn.setText("Liste des habitants");
-        btn.setGravity(Gravity.CENTER);
+//        Button btn = new Button(this);
+//        btn.setText("Liste des habitants");
+//        btn.setGravity(Gravity.CENTER);
 
         setContentView(textView);
-        setContentView(btn);
+//        setContentView(btn);
     }
 }
 
