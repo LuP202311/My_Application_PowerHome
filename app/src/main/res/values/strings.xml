@@ -1,4 +1,26 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="connectez_vous">Connectez-vous</string>
+    <string name="bienvenue">Bienvenue sur Jumia</string>
+    <string name="app_name">Mon Application</string>
+    <string name="connection">Connectez-vous</string>
+    <string-array name="spinnerItems">
+        <item>+33</item>
+        <item>+34</item>
+        <item>+44</item>
+    </string-array>
+    <string name="motdepasse">Mot de passe</string>
+    <string name="mobile">Mobile</string>
+    <string name="Email">E-mail</string>
+    <string name="identification">Identifiez-vous</string>
+    <string name="continuerAvecFacebook">Continuer avec Facebook</string>
+    <string name="creercompte">Créer un compte</string>
+    <string name="nouveaujumia">Nouveau sur Jumia ?</string>
+    <string name="motdepasseoubli">mot de passe oublié ?</string>
+    <string name="ou">ou</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="LearnApp" />
+    <string name="etage">ETAGE</string>
+    <string name="equipements">équipements</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
