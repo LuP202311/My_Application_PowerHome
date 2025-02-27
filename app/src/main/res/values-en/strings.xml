@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bienvenue">Welcome to Jumia</string>
+    <string name="app_name">My Application</string>
+    <string name="mobile">Mobile</string>
+    <string name="identification">Authenticate yourself</string>
+    <string name="continuerAvecFacebook">Start with Facebook</string>
+    <string name="creercompte">Create an account</string>
+    <string name="ou">or</string>
+    <string name="connection">Sign in</string>
+    <string name="motdepasse">Password</string>
+    <string name="Email">E-mail</string>
+    <string name="nouveaujumia">New to Jumia ?</string>
+    <string name="motdepasseoubli">password forgotten ?</string>
+    <string name="nom">Last name</string>
+    <string name="prenom">First name</string>
+    <string name="LearnApp">LearnApp</string>
+    <string name="etage">FLOOR</string>
+    <string name="equipements">appliances</string>
+    <string-array name="spinnerItems">
+        <item>+33</item>
+        <item>+34</item>
+        <item>+44</item>
+    </string-array>
+</resources>
