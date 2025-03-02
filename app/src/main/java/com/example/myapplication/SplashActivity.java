@@ -14,15 +14,5 @@ public class SplashActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        LinearLayout layout = findViewById(R.id.splash);
-
-        layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }
