@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item android:id="@+id/habitats"
+        android:title="@string/habitats">
+    </item>
+    <item android:id="@+id/monHabitat"
+        android:title="@string/mon_habitat">
+    </item>
+    <item android:id="@+id/mesRequetes"
+        android:title="@string/mes_requetes">
+    </item>
+    <item android:id="@+id/parametres"
+        android:title="@string/parametres">
+    </item>
+    <item android:id="@+id/seDeconnecter"
+        android:title="@string/se_deconnecter">
+    </item>
 </menu>

@@ -4,23 +4,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/orange"
+    android:background="@color/light_green"
     android:orientation="vertical"
     android:layout_gravity="center">
+
     <ImageView
         android:layout_marginTop="300dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/jumiaicone"
+        android:src="@drawable/powerhome_icon"
         android:layout_gravity="center"
         />
+
     <TextView
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bienvenue"
         android:textColor="@color/white"
-        android:textAllCaps="true"
         android:textSize="30sp"
         android:layout_gravity="center"
         />

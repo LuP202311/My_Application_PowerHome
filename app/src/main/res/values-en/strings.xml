@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="bienvenue">Welcome to Jumia</string>
+    <string name="bienvenue">Welcome to PowerHome</string>
     <string name="app_name">My Application</string>
     <string name="mobile">Mobile</string>
     <string name="identification">Authenticate yourself</string>
@@ -10,13 +10,18 @@
     <string name="connection">Sign in</string>
     <string name="motdepasse">Password</string>
     <string name="Email">E-mail</string>
-    <string name="nouveaujumia">New to Jumia ?</string>
+    <string name="nouveaujumia">New to PowerHome ?</string>
     <string name="motdepasseoubli">password forgotten ?</string>
     <string name="nom">Last name</string>
     <string name="prenom">First name</string>
     <string name="LearnApp">LearnApp</string>
     <string name="etage">FLOOR</string>
     <string name="equipements">appliances</string>
+    <string name="se_deconnecter">Log out</string>
+    <string name="parametres">Parameters</string>
+    <string name="mes_requetes">My requests</string>
+    <string name="mon_habitat">My habitat</string>
+    <string name="habitats">Habitats</string>
     <string-array name="spinnerItems">
         <item>+33</item>
         <item>+34</item>
