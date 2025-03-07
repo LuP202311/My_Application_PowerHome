@@ -36,7 +36,12 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.drawerlayout
     implementation libs.filament.android
+    implementation libs.navigation.fragment
+    implementation(libs.ion)
+    implementation libs.navigation.ui
+    implementation libs.gson
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
 }
