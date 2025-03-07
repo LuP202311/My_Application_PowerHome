@@ -15,7 +15,7 @@ public class HabitatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_learnapp);
+        setContentView(R.layout.activity_habitats);
 
         ListView listView = findViewById(R.id.list_item);
 
@@ -37,7 +37,6 @@ public class HabitatActivity extends AppCompatActivity {
 
         List<Appliance> appliances3 = new ArrayList<>();
         appliances3.add(appliance1);
-        appliances3.add(appliance2);
 
         List<Appliance> appliances4 = new ArrayList<>();
         appliances4.add(appliance1);
@@ -46,6 +45,7 @@ public class HabitatActivity extends AppCompatActivity {
         List<Appliance> appliances5 = new ArrayList<>();
         appliances5.add(appliance1);
         appliances5.add(appliance2);
+        appliances5.add(appliance3);
 
         List<Habitat> habitants = new ArrayList<>();
 
