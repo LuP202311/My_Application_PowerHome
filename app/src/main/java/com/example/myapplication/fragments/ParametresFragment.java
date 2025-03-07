@@ -61,6 +61,8 @@ public class ParametresFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_parametres, container, false);
+        getActivity().setTitle("Paramètres");
+        View rootView=inflater.inflate(R.layout.fragment_parametres, container, false);
+        return rootView;
     }
 }

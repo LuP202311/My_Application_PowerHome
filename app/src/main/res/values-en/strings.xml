@@ -22,6 +22,8 @@
     <string name="mes_requetes">My requests</string>
     <string name="mon_habitat">My habitat</string>
     <string name="habitats">Habitats</string>
+    <string name="open" />
+    <string name="close" />
     <string-array name="spinnerItems">
         <item>+33</item>
         <item>+34</item>

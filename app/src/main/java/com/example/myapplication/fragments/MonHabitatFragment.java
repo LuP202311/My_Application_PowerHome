@@ -61,6 +61,8 @@ public class MonHabitatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mon_habitat, container, false);
+        getActivity().setTitle("Mon habitat");
+        View rootView=inflater.inflate(R.layout.fragment_mon_habitat, container, false);
+        return rootView;
     }
 }

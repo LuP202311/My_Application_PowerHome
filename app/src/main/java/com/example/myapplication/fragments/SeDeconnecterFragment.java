@@ -61,6 +61,8 @@ public class SeDeconnecterFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_se_deconnecter, container, false);
+        getActivity().setTitle("Se déconnecter");
+        View rootView=inflater.inflate(R.layout.fragment_se_deconnecter, container, false);
+        return rootView;
     }
 }

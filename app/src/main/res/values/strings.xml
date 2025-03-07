@@ -28,4 +28,6 @@
     <string name="mes_requetes">Mes requêtes</string>
     <string name="mon_habitat">Mon habitat</string>
     <string name="habitats">Habitats</string>
+    <string name="open" />
+    <string name="close" />
 </resources>
