@@ -24,6 +24,7 @@
     <string name="habitats">Habitats</string>
     <string name="open" />
     <string name="close" />
+    <string name="gaetan_leclair_toodo_com">gaetan.leclair@toodo.com</string>
     <string-array name="spinnerItems">
         <item>+33</item>
         <item>+34</item>

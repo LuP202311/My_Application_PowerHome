@@ -1,8 +1,12 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Checkable;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
@@ -29,9 +33,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         drawerDL = findViewById(R.id.drawer);
         NavigationView navNV = findViewById(R.id.nav_view);
+        View headerView = navNV.getHeaderView(0);
+        TextView userName = headerView.findViewById(R.id.user_name);
+        ImageView profileImage = headerView.findViewById(R.id.image_profile);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+
+        if(bundle != null) {
+            String email = bundle.getString("email");
+            userName.setText(email);
+        }
+
         toggle =
                 new ActionBarDrawerToggle(this, drawerDL,
                         R.string.open, R.string.close);

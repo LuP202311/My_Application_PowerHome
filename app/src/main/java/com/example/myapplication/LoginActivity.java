@@ -22,7 +22,7 @@ public class LoginActivity extends Activity {
         btn_connecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, PersonneActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 Bundle bundle = new Bundle();
 
                 EditText emailET = findViewById(R.id.email);
@@ -48,13 +48,13 @@ public class LoginActivity extends Activity {
 //        });
 
 
-        btn_connecter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent1);
-            }
-        });
+//        btn_connecter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(intent1);
+//            }
+//        });
 
 
         btn_inscrire.setOnClickListener(new View.OnClickListener() {
