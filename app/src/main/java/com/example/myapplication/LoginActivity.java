@@ -39,20 +39,30 @@ public class LoginActivity extends Activity {
             }
         });
 
+//        btn_connecter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent1 = new Intent(LoginActivity.this, HabitatActivity.class);
+//                startActivity(intent1);
+//            }
+//        });
+
+
         btn_connecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(LoginActivity.this, HabitatActivity.class);
+                Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent1);
             }
         });
 
-//        btn_inscrire.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent2 = new Intent(LoginActivity.this, RegisterActivity.class);
-//                startActivity(intent2);
-//            }
-//        });
+
+        btn_inscrire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent2);
+            }
+        });
     }
 }

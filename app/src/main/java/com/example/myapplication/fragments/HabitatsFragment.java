@@ -7,8 +7,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import com.example.myapplication.HabitatActivity;
+import com.example.myapplication.HabitatAdapter;
 import com.example.myapplication.R;
+
+import java.Appliance;
+import java.Habitat;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -51,10 +59,6 @@ public class HabitatsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -62,7 +66,48 @@ public class HabitatsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         getActivity().setTitle("Habitats");
-        View rootView=inflater.inflate(R.layout.fragment_habitats, container, false);
-        return rootView;
+        View view=inflater.inflate(R.layout.fragment_habitats, container, false);
+
+        // appliances
+        Appliance appliance1 = new Appliance(1,"machine_laver", 500, "600H");
+        Appliance appliance2 = new Appliance(2,"aspirateur", 300, "7800H");
+        Appliance appliance3 = new Appliance(3,"fer_a_repasser", 250, "800H");
+        Appliance appliance4 = new Appliance(4,"climatiseur", 1500, "9600H");
+
+        List<Appliance> appliances1 = new ArrayList<>();
+        appliances1.add(appliance1);
+        appliances1.add(appliance2);
+        appliances1.add(appliance3);
+        appliances1.add(appliance4);
+
+        List<Appliance> appliances2 = new ArrayList<>();
+        appliances2.add(appliance1);
+        appliances2.add(appliance2);
+
+        List<Appliance> appliances3 = new ArrayList<>();
+        appliances3.add(appliance1);
+
+        List<Appliance> appliances4 = new ArrayList<>();
+        appliances4.add(appliance1);
+        appliances4.add(appliance2);
+
+        List<Appliance> appliances5 = new ArrayList<>();
+        appliances5.add(appliance1);
+        appliances5.add(appliance2);
+        appliances5.add(appliance3);
+
+        List<Habitat> habitants = new ArrayList<>();
+
+        habitants.add(new Habitat(1, "Gaëtan LeClair", 1, 500.0,appliances1));
+        habitants.add(new Habitat(2, "Cédric Boudet", 1, 500.0,appliances2));
+        habitants.add(new Habitat(1, "Gaylord Thibodeaux", 2, 500.0,appliances3));
+        habitants.add(new Habitat(2, "Adam Jacquinot", 3, 500.0,appliances4));
+        habitants.add(new Habitat(2, "Abel Fresnel", 3, 500.0,appliances5));
+
+        ListView listView = view.findViewById(R.id.list_item);
+        HabitatAdapter adapter = new HabitatAdapter(getActivity(), R.layout.item_habitat, habitants);
+        listView.setAdapter(adapter);
+
+        return view;
     }
 }

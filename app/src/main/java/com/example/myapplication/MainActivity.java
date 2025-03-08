@@ -9,21 +9,28 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.myapplication.fragments.HabitatsFragment;
+import com.example.myapplication.fragments.MesRequetesFragment;
+import com.example.myapplication.fragments.MonHabitatFragment;
+import com.example.myapplication.fragments.ParametresFragment;
+import com.example.myapplication.fragments.SeDeconnecterFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     ActionBarDrawerToggle toggle;
     FragmentManager fm;
+    DrawerLayout drawerDL;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        DrawerLayout drawerDL = findViewById(R.id.drawer);
+        drawerDL = findViewById(R.id.drawer);
         NavigationView navNV = findViewById(R.id.nav_view);
         toggle =
                 new ActionBarDrawerToggle(this, drawerDL,
@@ -45,6 +52,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        if (item.getItemId() == R.id.habitats){
+            fm.beginTransaction().replace(R.id.contentFL,
+                    new HabitatsFragment()).commit();
+        } else if (item.getItemId() == R.id.monHabitat) {
+            fm.beginTransaction().replace(R.id.contentFL,
+                    new MonHabitatFragment()).commit();
+        } else if (item.getItemId() == R.id.mesRequetes) {
+            fm.beginTransaction().replace(R.id.contentFL,
+                    new MesRequetesFragment()).commit();
+        } else if (item.getItemId() == R.id.parametres) {
+            fm.beginTransaction().replace(R.id.contentFL,
+                    new ParametresFragment()).commit();
+        } else if (item.getItemId() == R.id.seDeconnecter) {
+            fm.beginTransaction().replace(R.id.contentFL,
+                    new SeDeconnecterFragment()).commit();
+        }
+        drawerDL.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
